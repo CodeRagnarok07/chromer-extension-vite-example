@@ -26,15 +26,16 @@ export default {
   },
   content_scripts: [
     {
-      matches: ['https://*'],
-      js: ['src/content/global/index.js'],
-    },
-
-    // {
-    //   matches: ['https://www.twitch.tv/*'],
-    //   js: ['src/content/twitch/index.js'],
-    // },
-  ],
+      matches: [
+        "http://*/*",
+        "https://*/*",
+        "<all_urls>"
+      ],
+      js: [
+        "src/worker/worker.js"
+      ]
+    }
+  ]
 
 };
 
