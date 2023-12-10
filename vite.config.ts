@@ -1,6 +1,6 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react-swc'
-import manifest from './manifest.ts';
+import manifest from './manifest.js';
 import { resolve } from 'path';
 import hotReloadExtension from 'hot-reload-extension-vite';
 
